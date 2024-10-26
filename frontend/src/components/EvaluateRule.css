@@ -1,0 +1,17 @@
+.result-box {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.result-box.success {
+    background-color: #d4edda;  /* Green background for success */
+    color: #155724;  /* Dark green text */
+}
+
+.result-box.failure {
+    background-color: #f8d7da;  /* Red background for failure */
+    color: #721c24;  /* Dark red text */
+}

@@ -1,0 +1,103 @@
+.home-container {
+    text-align: center;
+    margin-top: 100px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.welcome-message {
+    font-size: 3rem;
+    color: #3949ab;
+    animation: slideIn 1.5s ease-in-out;
+    font-weight: bold;
+}
+
+.welcome-description {
+    font-size: 1.5rem;
+    color: #555;
+    margin-top: 20px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.examples-container {
+    margin-top: 40px;
+    text-align: left;
+    display: inline-block;
+    max-width: 600px;  /* Restrict width for better readability */
+    line-height: 1.6;  /* Increase line height for readability */
+}
+
+/* Font sizes for examples */
+.examples-container h2 {
+    color: #3949ab;
+    font-size: 1.8rem;
+}
+
+.examples-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.examples-container li {
+    margin: 10px 0;
+    font-size: 1.2rem;  /* Increase font size for readability */
+}
+
+/* Center the button */
+.cta-button {
+    display: block;  /* Makes the button a block element */
+    margin: 30px auto;  /* Center the button horizontally */
+    padding: 15px 30px;
+    background-color: #3949ab;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #283593;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .welcome-message {
+        font-size: 2.5rem;
+    }
+
+    .welcome-description {
+        font-size: 1.2rem;
+    }
+
+    .examples-container {
+        font-size: 1rem;
+        max-width: 90%; /* Adjust width to fit mobile screens */
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
